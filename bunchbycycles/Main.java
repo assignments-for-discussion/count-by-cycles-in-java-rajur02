@@ -12,7 +12,7 @@ public class Main {
     return counts;
   }
 
-  static countByUsage testBucketingByNumberOfCycles() {
+  static void testBucketingByNumberOfCycles() {
     System.out.println("Counting batteries by usage cycles...\n");
     CountsByUsage counts = countBatteriesByUsage(new int[] {100, 300, 500, 600, 900, 1000});
     assert(counts.lowCount == 1);
