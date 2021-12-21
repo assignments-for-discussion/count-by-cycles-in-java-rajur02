@@ -7,7 +7,7 @@ public class Main {
     public int highCount = 0;
   };
 
-  static CountsByUsage countBatteriesByUsage(int[] cycles) {
+  static void CountsByUsage countBatteriesByUsage(int[] cycles) {
     CountsByUsage counts = new CountsByUsage();
     return counts;
   }
@@ -16,8 +16,8 @@ public class Main {
     System.out.println("Counting batteries by usage cycles...\n");
     CountsByUsage counts = countBatteriesByUsage(new int[] {100, 300, 500, 600, 900, 1000});
     assert(counts.lowCount == 1);
-    assert(counts.mediumCount == 3);
-    assert(counts.highCount == 2);
+    assert(counts.mediumCount == 2);
+    assert(counts.highCount == 3);
     System.out.println("Done counting :)\n");
   }
 
