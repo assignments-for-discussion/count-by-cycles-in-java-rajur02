@@ -7,7 +7,7 @@ public class Main {
     public int highCount = 0;
   };
 
-  static void CountsByUsage countBatteriesByUsage(int[] cycles) {
+  static CountsByUsage countBatteriesByUsage(int[] cycles) {
     CountsByUsage counts = new CountsByUsage();
     return counts;
   }
